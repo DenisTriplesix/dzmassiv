@@ -8,20 +8,24 @@ public class Main {
 //        int minNumber = array [9]; // беру из массива минимальное число
 //        System.out.println("Min number"+ minNumber);
 
-
-        int[] arr = {45, 78, -15, 12, 34, 6, 91, 7, -2, -45};
-
-        int max = 0;
-        int min = -1;
-        for (int q = 0; q < arr.length; q++) {
-            if (max <= arr[q]) {
-                max = arr[q];
-            } else if (min >= arr[q]) {
-                min = arr[q];
+//}
+        int[] array = {45, 78, -15, 12, 34, 6, 91, 7, -2, -45};
+        int max = 0;                                //переменная максимального
+        int min = -1;                               //переменная минимального
+        for (int q = 0; q < array.length; q++) {
+            if (max <= array[q]) {      //придаю переменной max максимальное значение из массива
+                max = array[q];
+            } else if (min >= array[q]) {          //минимальное
+                min = array[q];
             }
         }
-        System.out.println(max);
-        System.out.println(min);
+            System.out.println("Минимальное число" + min);
+            System.out.println("Максимальное число" + max);
+
     }
 }
+
+
+
+
 
